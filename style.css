@@ -1,0 +1,215 @@
+ul{
+    list-style: none;
+}
+body{
+    background-color: rgb(190, 195, 199);
+}
+
+.header,.footer,.global-navi-layout,.global-navi-icon,.global-navi-bar{
+    border:1px solid #000;
+}
+.header{
+    background-color: #fff;
+}
+.main{
+    width:100%;
+    margin:auto;
+    
+}
+.global-navi-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    padding: 0 16px;
+
+}
+.global-navi-bar ul{
+    display: flex;
+    padding:0;
+    margin:0;
+    
+    
+}
+.global-navi-bar li{
+    border:1px solid #000;
+    margin-left: 16px;
+}
+
+.header-categorize{
+    align-items: center;
+    margin:0 auto;
+    padding: 0 16px;
+    border:1px solid #000;
+}
+.header-categorize ul{
+    display:flex;
+    padding:0;
+    margin:0;   
+}
+.header-categorize li{
+    flex:1;
+    text-align: center;
+    border:1px solid #000;
+    margin: 0 10px;
+}
+.header-logo{
+    border:1px solid #000;
+}
+.main{
+    margin-top: 10px;
+}
+.food-name{
+    width:auto;
+    font-size: 30px;
+    line-height:2;
+    background-color: #fff;
+}
+.food-picIntro-authorIntro{
+    
+    display: flex;
+    background-color: #fff;
+}
+.food-picIntro-pic{
+    margin:0;
+}
+.food-picIntro-intro{
+    font-size: 16px;
+    line-height:2;
+    background-color: #fff;
+}
+.authorIntro{
+    border:1px solid #000;
+}
+.food-quantity-time{
+    display: flex;
+    margin-top:10px;
+    align-items: center;
+    border-bottom: 1px solid #e2e0db;
+    background-color: #fff;
+}
+.food-quantity{
+    margin:15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 33.3333333333%;
+    border-right: 1px solid #e2e0db;
+    
+}
+.food-time{
+    margin:15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 33.3333333333%;
+}
+.food-ingredient{
+    
+    background-color: #fff;
+}
+.food-ingredient-text{
+    font-size: 1.5em;
+    border-bottom: 2px solid #000;
+}
+.food-ingredient{
+    padding:10px;
+}
+.food-ingredient-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding:10px;
+    margin:0;
+}
+
+.food-ingredients{
+    display: flex;
+    padding: 10px   0px;
+    width:calc( 50% - 15px);
+    justify-content: space-between;
+    
+}
+.cream-ingredint{
+    border:1px solid rgb(207, 226, 207);
+}
+.cream-name{
+    background-color: rgb(207, 226, 207);
+
+    border-bottom: 1px solid rgb(207, 226, 207);
+}
+
+.recipe-detail-list{
+    background-color: #fff;
+    margin-top: 10px;
+    padding:10px;
+}
+.recipe-detail{
+    padding:0;
+}
+.recipe-details
+{
+    display: flex;
+    margin:0 0 16px;
+    border-bottom: 1px solid #e2e0db;
+}
+.recipe-details img{
+    height:220px;
+    margin-bottom:7px;
+    margin-right:15px;
+}
+.recipe-intro{
+    margin-bottom: 6px;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+.message{
+    margin-top:10px;
+}
+.message,.message-icon,.message-form,.submit,.message-icon-form{
+    border: 1px solid #000
+}
+.message-icon-form{
+    display: flex;
+}
+.sp-display{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .food-picIntro-authorIntro{
+        flex-direction: column;
+        width: 100%;
+    }
+    .food-picIntro-pic img{
+        width:100%;
+    }
+    
+    .food-ingredient-list{
+        flex-direction: column;
+    }
+    .recipe-details
+    {
+        flex-direction: column;
+    }
+    
+    .food-name{
+        width:100%;
+    }
+    .food-ingredients{
+        width:100%
+    }
+    .recipe-intro{
+        font-size: 1em;
+    }
+    .recipe-details{
+        align-items: center;
+    }
+    .sp-display{
+        display: block;
+    }
+    .com-display{
+        display: none;
+
+    }
+}
